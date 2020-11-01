@@ -1,0 +1,11 @@
+<div *ngIf="speaker">
+    <div><span>id: </span>{{speaker.id}}</div>
+    <div>
+        <label>name:
+            <input [(ngModel)]="speaker.id" placeholder="name" />
+        </label>
+        <label>speed:
+            <input [(ngModel)]="speaker.speed" placeholder="speed" />
+        </label>
+    </div>
+</div>

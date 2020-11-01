@@ -1,0 +1,9 @@
+<h2>Speakers</h2>
+
+<ul class="speakers">
+    <li *ngFor="let speaker of speakers"  [class.selected]="speaker === selectedSpeaker" (click)="onSelect(speaker)">
+        <span class="badge">{{speaker.id}}</span> {{speaker.speed}}
+    </li>
+</ul>
+
+<app-speaker-detail [speaker]="selectedSpeaker"></app-speaker-detail>
